@@ -10,35 +10,25 @@
 
 ---
 
-## 🎯 Features
+## 📸 Screenshots
 
-### Level 1 — Wallet & Transactions
-- ✅ **Freighter Wallet Setup** — Seamless integration with Stellar Testnet
-- ✅ **Wallet Connect/Disconnect** — Multi-wallet support (Freighter + manual key)
-- ✅ **XLM Balance Display** — Real-time balance with 10s auto-polling
-- ✅ **Send XLM** — Full transaction flow with success/failure feedback and tx hash
+### 🔗 Wallet Connect
+> Multi-wallet connection screen with Freighter auto-detection and manual public key entry
 
-### Level 2 — Smart Contracts & Error Handling
-- ✅ **3 Error Types** — `NetworkError`, `InsufficientFundsError`, `ContractError`
-- ✅ **Soroban Contract Deployed** — Custom SVT Token contract on testnet
-- ✅ **Contract Called from Frontend** — Mint, transfer, and query token functions
-- ✅ **Transaction Status Visible** — Multi-step progress (building → signing → submitting)
+![Wallet Connect](screenshots/wallet-connect.png)
 
-### Level 3 — Mini-dApp
-- ✅ **Fully Functional dApp** — Complete wallet-to-contract flow
-- ✅ **3+ Tests Passing** — Vitest with React Testing Library (14+ tests)
-- ✅ **README Complete** — You're reading it!
-- ✅ **Demo Video** — See [Demo](#demo) section
+### 📊 Dashboard
+> Connected wallet view — XLM balance display, Friendbot funding, live event streaming, and full navigation
 
-### Level 4 — Advanced Features
-- ✅ **Inter-Contract Calls** — Liquidity Pool calls Token contract for transfers
-- ✅ **Custom Token Deployed** — StellarVault Token (SVT) on Soroban
-- ✅ **Liquidity Pool** — AMM with constant product formula (x·y=k)
-- ✅ **CI/CD Running** — GitHub Actions (lint, test, build)
-- ✅ **Mobile Responsive** — Fully responsive with mobile-first breakpoints
-- ✅ **8+ Meaningful Commits** — Structured development history
+![Dashboard](screenshots/dashboard.png)
+
+### 🏊 Liquidity Pool
+> SVT/XLM AMM interface with swap & deposit tabs, pool reserves, and real-time balance sidebar
+
+![Liquidity Pool](screenshots/liquidity-pool.png)
 
 ---
+
 
 ## 🏗️ Architecture
 
@@ -255,16 +245,17 @@ stellar-vault/
 
 ## 🎬 Demo
 
-> Record a demo video showing:
-> 1. App loads with premium UI
-> 2. Connect Freighter wallet
-> 3. View XLM balance
-> 4. Fund account with Friendbot
-> 5. Send XLM transaction
-> 6. View transaction success with hash
-> 7. Check real-time event log
-> 8. Navigate to Token and Pool panels
-> 9. Show mobile responsiveness
+See the [Screenshots](#-screenshots) section above for a visual walkthrough of the app.
+
+**Key Demo Flow:**
+
+1. 🔗 **Connect Wallet** — Choose Freighter (auto-detected) or enter a public key manually
+2. 📊 **View Dashboard** — See real-time XLM balance and live event stream
+3. 💰 **Fund with Friendbot** — Get 10,000 testnet XLM instantly
+4. 💸 **Send XLM** — Execute transactions with full status tracking (building → signing → submitting)
+5. 🪙 **Token Panel** — Mint, transfer, and query SVT token balances via Soroban
+6. 🏊 **Liquidity Pool** — Swap XLM ↔ SVT using the AMM with 0.3% fee
+7. 📡 **Live Events** — Watch real-time transaction events as they happen
 
 ---
 
